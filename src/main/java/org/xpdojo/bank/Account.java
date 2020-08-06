@@ -18,4 +18,9 @@ public class Account {
     public String toString() {
         return super.toString();
     }
+
+    public int balance()
+    {
+        return 0;
+    }
 }
