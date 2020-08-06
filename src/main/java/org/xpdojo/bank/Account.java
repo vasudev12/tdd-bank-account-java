@@ -4,9 +4,14 @@ public class Account {
 
     private int balance;
 
-    public Account() {
+    private Account() {
         this.balance = 0;
     }
+
+    public static Account createAccount() {
+        return new Account();
+    }
+
 
     @Override
     public int hashCode() {
@@ -31,4 +36,10 @@ public class Account {
     public void deposit(int amount) {
         this.balance = this.balance + amount;
     }
+
+    public Boolean withdraw(int i) {
+        throw new RuntimeException("operation not supported");
+    }
+
+
 }
