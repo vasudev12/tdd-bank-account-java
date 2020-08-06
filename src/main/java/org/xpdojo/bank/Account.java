@@ -1,7 +1,11 @@
 package org.xpdojo.bank;
 
 public class Account {
+
+    private int balance;
+
     public Account() {
+        this.balance = 0;
     }
 
     @Override
@@ -21,6 +25,10 @@ public class Account {
 
     public int balance()
     {
-        return 0;
+        return balance;
+    }
+
+    public void deposit(int amount) {
+        this.balance = amount;
     }
 }
