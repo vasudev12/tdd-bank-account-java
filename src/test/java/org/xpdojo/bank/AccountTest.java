@@ -12,6 +12,6 @@ public class AccountTest {
 
         Account account = new Account();
 
-        assertThat(account.balance() == 0);
+        assertThat(account.balance() ).isEqualTo(0);
     }
 }
